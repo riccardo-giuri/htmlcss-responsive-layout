@@ -1,0 +1,17 @@
+$grid-columns: 3;
+
+.container {
+    width: 100%;
+    max-width: 576px;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 0;
+}
+
+
+
