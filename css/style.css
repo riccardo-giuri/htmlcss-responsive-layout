@@ -80,6 +80,10 @@ img {
   gap: 35px;
 }
 
+.get-started {
+  max-width: 430px;
+}
+
 .bg-blue_std {
   background-color: #0084fd;
 }
@@ -138,6 +142,11 @@ img {
 
 .long-card {
   display: flex;
+}
+
+.about-info-card .about-img {
+  width: 100%;
+  height: auto;
 }
 
 .navbar {
@@ -422,11 +431,11 @@ img {
 }
 
 .font-xs {
-  font-size: 0, 5rem;
+  font-size: 0.5rem;
 }
 
 .font-sm {
-  font-size: 0, 75rem;
+  font-size: 0.75rem;
 }
 
 .font-md {
@@ -503,6 +512,10 @@ h-50 {
   justify-content: center;
 }
 
+.td-under {
+  text-decoration: underline;
+}
+
 @media (min-width: 0px) {
   .col-1-xs {
     width: 16.6666666667%;
@@ -531,7 +544,7 @@ h-50 {
   .row-st {
     gap: 40px;
   }
-  .row:first-child img {
+  #phone {
     width: 100%;
     padding-top: 20px;
     object-fit: cover;
@@ -588,7 +601,7 @@ h-50 {
   .navbar i {
     display: block;
   }
-  .row:first-child img {
+  #phone {
     width: 50%;
     padding-top: 20px;
     object-fit: cover;
@@ -648,9 +661,9 @@ h-50 {
     align-items: stretch;
     justify-content: space-between;
   }
-  .row:first-child img {
+  #phone {
     width: 50%;
-    height: 60%;
+    padding-top: 20px;
     object-fit: cover;
   }
 }

@@ -27,7 +27,7 @@
         gap: variables.$gap-xl * 2;
     }
 
-    .row:first-child img{
+    #phone{
         width: 100%;
         padding-top: 20px;
         object-fit: cover;
@@ -83,7 +83,7 @@
         display: block;
     }
 
-    .row:first-child img{
+    #phone{
         width: 50%;
         padding-top: 20px;
         object-fit: cover;
@@ -139,9 +139,9 @@
         @include layouts.flex-row(space-between, stretch)
     }
 
-    .row:first-child img{
+    #phone{
         width: 50%;
-        height: 60%;
+        padding-top: 20px;
         object-fit: cover;
     }
 }
