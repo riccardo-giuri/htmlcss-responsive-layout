@@ -1,17 +1,15 @@
 @use 'layouts';
 @use 'variables';
+@use 'breakpoints';
 
 .navbar {
     @include layouts.flex-row(space-between, center);
-    width: 100%;
     height: variables.$navbar-height;
 
     .nav-info-container {
         @include layouts.flex-row(space-between, center);
-        //display: none;
     }
 
-    i {
-        display: none;
-    }
 }
+
+

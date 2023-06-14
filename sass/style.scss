@@ -3,9 +3,9 @@
 
 //base and layout
 @use 'base';
-@use 'breakpoints';
 @use 'grid';
 @use 'layouts';
+@use 'breakpoints';
 
 //colors
 @use 'colors';
@@ -16,3 +16,6 @@
 
 //utilities
 @use 'utilities';
+
+//responsive queries
+@use 'media-queries';

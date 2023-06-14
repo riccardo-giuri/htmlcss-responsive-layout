@@ -1,0 +1,60 @@
+@use 'breakpoints';
+@use 'grid';
+@use 'navbar';
+@use 'sass:math';
+
+
+@include breakpoints.xs {
+    //grid columns
+    @for $i from 1 through grid.$grid-columns {
+        .col-#{$i}-xs {
+            width: math.div($i * 100%, grid.$grid-columns);
+        }
+    }
+
+    //navbar
+    .navbar .nav-info-container {
+        display: none;
+    }
+
+}
+
+@include breakpoints.md {
+    @for $i from 1 through grid.$grid-columns {
+        .col-#{$i}-md {
+            width: math.div($i * 100%, grid.$grid-columns);
+        }
+    }
+
+    .container{
+        width: map_get(breakpoints.$breakpoints, "md");
+    }
+
+    .navbar .nav-info-container {
+        display: none;
+    }
+
+    .navbar i{
+        display: block;
+    }
+}
+
+@include breakpoints.xl {
+    @for $i from 1 through grid.$grid-columns {
+        .col-#{$i}-xl {
+            width: math.div($i * 100%, grid.$grid-columns);
+        }
+    }
+
+    .container{
+        width: map_get(breakpoints.$breakpoints, "xl");
+    }
+
+    .navbar .nav-info-container {
+        display: flex;
+    }
+
+    .navbar i{
+        display: none;
+    }
+}
