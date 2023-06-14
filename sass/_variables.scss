@@ -1,8 +1,32 @@
 //colors
+$color-palette: (
+    "blue_std": #0084fd,
+    "blue_lgt": #b5ddff,
+    "purple_std": #9792e4,
+    "yellow_std": #fdc15f,
+    "blk" : black,
+    "wht" : white,
+);
 
 //spacing
+$base-padding : 50px;
 
 //borders
+$base-border-radius : 20px;
+$base-border-thickness: 1px;
 
 //font sizes
-$base-font-size: 1rem;
+$font-size-sm : 0,75rem;
+$base-font-size : 1rem;
+$font-size-lg : 1.5rem;
+$font-size-xl : 2rem;
+$font-size-xxl : 2.5rem;
+
+//widths
+$base-width: 375px;
+
+//images
+img {
+    width: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,113 @@
+@use 'variables';
+@use 'sass:math';
+
+$utilities: (
+    "padding": (
+        "prefix": "p",
+        "values": (
+        "0": 0,
+        "1": variables.$base-padding * 0.5,
+        "2": variables.$base-padding * 0.75,
+        "3": variables.$base-padding,
+        "4": variables.$base-padding * 1.5,
+        "5": variables.$base-padding * 2,
+        "6": variables.$base-padding * 2.5,
+        ),
+    ),
+
+    "padding-left": (
+        "prefix": "pl",
+        "values": (
+        "0": 0,
+        "1": variables.$base-padding * 0.5,
+        "2": variables.$base-padding * 0.75,
+        "3": variables.$base-padding,
+        "4": variables.$base-padding * 1.5,
+        "5": variables.$base-padding * 2,
+        "6": variables.$base-padding * 2.5,
+        ),
+    ),
+
+    "padding-right": (
+        "prefix": "pr",
+        "values": (
+        "0": 0,
+        "1": variables.$base-padding * 0.5,
+        "2": variables.$base-padding * 0.75,
+        "3": variables.$base-padding,
+        "4": variables.$base-padding * 1.5,
+        "5": variables.$base-padding * 2,
+        "6": variables.$base-padding * 2.5,
+        ),
+    ),
+
+    "padding-top": (
+        "prefix": "pt",
+        "values": (
+        "0": 0,
+        "1": variables.$base-padding * 0.5,
+        "2": variables.$base-padding * 0.75,
+        "3": variables.$base-padding,
+        "4": variables.$base-padding * 1.5,
+        "5": variables.$base-padding * 2,
+        "6": variables.$base-padding * 2.5,
+        ),
+    ),
+
+    "padding-bottom": (
+        "prefix": "pb",
+        "values": (
+        "0": 0,
+        "1": variables.$base-padding * 0.5,
+        "2": variables.$base-padding * 0.75,
+        "3": variables.$base-padding,
+        "4": variables.$base-padding * 1.5,
+        "5": variables.$base-padding * 2,
+        "6": variables.$base-padding * 2.5,
+        ),
+    ),
+
+    "border-radius": (
+        "prefix": "br",
+        "values": (
+        "default": variables.$base-border-radius,
+        "none": 0,
+        "xs": math.div(variables.$base-border-radius, 4),
+        "sm": math.div(variables.$base-border-radius, 2),
+        "lg": variables.$base-border-radius * 2,
+        "full": 50%,
+        )
+    ),
+
+    "font-size": (
+        "prefix": "font",
+        "values": (
+        "sm": variables.$font-size-sm,
+        "md": variables.$base-font-size,
+        "lg": variables.$font-size-lg,
+        "xl": variables.$font-size-xl,
+        "xxl": variables.$font-size-xxl
+        )
+    )
+);
+
+
+@each $property, $map in $utilities {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+  
+    @each $key, $val in $values {
+      @if($key == "default") 
+      {
+        .#{$prefix} {
+          #{$property}: $val;
+        }
+      } 
+      @else 
+      {
+        .#{$prefix}-#{$key} {
+          #{$property}: $val;
+        }
+      }
+    }
+  }

@@ -1,0 +1,11 @@
+@use 'variables';
+
+@each $key, $val in variables.$color-palette {
+    .bg-#{$key} {
+        background-color: $val;
+    }
+
+    .text-#{$key} {
+        color: $val;
+    }
+}

@@ -1,0 +1,10 @@
+@use 'layouts';
+
+.navbar-container {
+    @include layouts.flex-row(space-between, center);
+    width: 100%;
+
+    .container {
+        @include layouts.flex-row(space-between, center);
+    }
+}

@@ -2,14 +2,16 @@
 @use 'variables';
 
 //base and layout
+@use 'base';
 @use 'breakpoints';
 @use 'grid';
-
+@use 'layouts';
 
 //colors
-
+@use 'colors';
 
 //component
-
+@use 'navbar';
 
 //utilities
+@use 'utilities';
