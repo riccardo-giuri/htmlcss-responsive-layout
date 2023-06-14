@@ -1,10 +1,17 @@
 @use 'layouts';
+@use 'variables';
 
-.navbar-container {
+.navbar {
     @include layouts.flex-row(space-between, center);
     width: 100%;
+    height: variables.$navbar-height;
 
-    .container {
+    .nav-info-container {
         @include layouts.flex-row(space-between, center);
+        //display: none;
+    }
+
+    i {
+        display: none;
     }
 }

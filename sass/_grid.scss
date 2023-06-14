@@ -4,6 +4,15 @@
 
 //first grid columns you have
 $grid-columns: 3;
+$grid-gaps: (
+    "0": 0,
+    "1": 10px,
+    "2": 15px,
+    "3": 20px,
+    "4": 25px,
+    "5": 30px,
+    "6": 35px,
+);
 
 .container {
     width: 100%;
@@ -21,6 +30,13 @@ $grid-columns: 3;
     flex-wrap: wrap;
     flex-basis: 0;
 }
+
+@each $key, $val in $grid-gaps {
+    .gap-#{$key} {
+        gap: $val;
+    }
+}
+
 
 @include breakpoints.xs {
     @for $i from 1 through $grid-columns {

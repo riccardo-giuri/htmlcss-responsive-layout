@@ -10,6 +10,7 @@ $color-palette: (
 
 //spacing
 $base-padding : 50px;
+$base-btn-padding : 2px;
 
 //borders
 $base-border-radius : 20px;
@@ -26,7 +27,7 @@ $font-size-xxl : 2.5rem;
 $base-width: 375px;
 
 //images
-img {
-    width: 100%;
-    object-fit: cover;
-}
+
+
+//navbar
+$navbar-height: 75px;

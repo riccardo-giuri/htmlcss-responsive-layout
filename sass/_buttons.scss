@@ -1,0 +1,27 @@
+@use 'variables';
+
+$button-paddings: (
+    "1": variables.$base-btn-padding,
+    "2": variables.$base-btn-padding * 2,
+    "3": variables.$base-btn-padding * 3,
+    "4": variables.$base-btn-padding * 4,
+    "5": variables.$base-btn-padding * 5,
+    "6": variables.$base-btn-padding * 6,
+    "7": variables.$base-btn-padding * 7,
+);
+
+@each $key, $val in $button-paddings {
+    .btn-p-#{$key} {
+        padding: $val;
+    }
+
+    .btn-plr-#{$key} {
+        padding-left: $val;
+        padding-right: $val;
+    }
+
+    .btn-ptb-#{$key} {
+        padding-top: $val;
+        padding-bottom: $val;
+    }
+}
