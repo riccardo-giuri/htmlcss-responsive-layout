@@ -86,7 +86,8 @@ $utilities: (
         "md": variables.$base-font-size,
         "lg": variables.$font-size-lg,
         "xl": variables.$font-size-xl,
-        "xxl": variables.$font-size-xxl
+        "xxl": variables.$font-size-xxl,
+        "3xl" : variables.$font-size-3xl,
         )
     )
 );
@@ -110,4 +111,24 @@ $utilities: (
         }
       }
     }
-  }
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.font-w-b{
+    font-weight: bold;
+}
+
+.text-al-ctr{
+    text-align: center;
+}
+
+.ar-1-1{
+    aspect-ratio: 1/1;
+}

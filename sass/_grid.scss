@@ -18,14 +18,19 @@ $grid-gaps: (
     width: 100%;
     width: variables.$base-width;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 variables.$container-padding-xs;
 }
 
 .row{
-    //test
-    min-height: 300px;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 0;
+}
 
+.row-st{
+    justify-content: center;
+    align-items: flex-end;
     display: flex;
     flex-wrap: wrap;
     flex-basis: 0;

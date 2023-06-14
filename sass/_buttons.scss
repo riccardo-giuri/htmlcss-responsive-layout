@@ -25,3 +25,8 @@ $button-paddings: (
         padding-bottom: $val;
     }
 }
+
+.btn-round{
+    width: variables.$font-size-lg; 
+    height: variables.$font-size-lg;
+}
