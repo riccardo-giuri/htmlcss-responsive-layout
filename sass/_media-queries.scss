@@ -37,12 +37,23 @@
         gap: variables.$gap-md;
     }
 
+    .long-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .long-card img{
+        width: 120px;
+        height: 120px;
+    }
 }
 
 @include breakpoints.md {
     @for $i from 1 through grid.$grid-columns {
         .col-#{$i}-md {
-            $width: calc(100% - (variables.$gap-md * (3 - $i)));
+            $width: calc(100% - (variables.$gap-md * (5 - $i)));
             width: calc(($i * $width) / grid.$grid-columns);
         }
     }
@@ -77,12 +88,24 @@
         padding-top: 20px;
         object-fit: cover;
     }
+
+    .long-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .long-card img{
+        width: 130px;
+        height: 130px;
+    }
 }
 
 @include breakpoints.xl {
     @for $i from 1 through grid.$grid-columns {
         .col-#{$i}-xl {            
-            $width: calc(100% - (variables.$gap-xl * (3 - $i)));
+            $width: calc(100% - (variables.$gap-xl * (5 - $i)));
             width: calc(($i * $width) / grid.$grid-columns);
         }
     }

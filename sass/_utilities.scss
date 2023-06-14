@@ -82,6 +82,7 @@ $utilities: (
     "font-size": (
         "prefix": "font",
         "values": (
+        "xs": variables.$font-size-xs,
         "sm": variables.$font-size-sm,
         "md": variables.$base-font-size,
         "lg": variables.$font-size-lg,
@@ -117,6 +118,18 @@ $utilities: (
     width: 50%;
 }
 
+.w-30{
+    width: 30%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+h-50{
+    width: 50%
+}
+
 .w-100{
     width: 100%;
 }
@@ -131,4 +144,26 @@ $utilities: (
 
 .ar-1-1{
     aspect-ratio: 1/1;
+}
+
+.text-upp{
+    text-transform: uppercase;
+}
+
+.oj-f-cov{
+    object-fit: cover;
+}
+
+.d-ib{
+    display: inline-block;
+}
+
+.d-f{
+    display: flex;
+}
+
+.d-f-col-cent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
